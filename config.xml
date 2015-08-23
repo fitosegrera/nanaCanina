@@ -17,6 +17,6 @@
         fitosegrera
     </author>
 
-    <preference name="phonegap-version" value="2.7.0" />
+    <preference name='phonegap-version' value='cli-5.1.1' />
 
 </widget>
