@@ -20,22 +20,9 @@
         <div role="main" class="ui-content">
             <img data-role="image" src="imgs/logo.png">
             <div id="reader" style="width:300px;height:250px"></div>
-    		<button class="ui-btn">Escanear</button>
+    		<button id="scan" class="ui-btn">Escanear</button>
         </div>
     </div>
-    <script type="text/javascript">
-     cordova.plugins.barcodeScanner.scan(
-      function (result) {
-          alert("We got a barcode\n" +
-                "Result: " + result.text + "\n" +
-                "Format: " + result.format + "\n" +
-                "Cancelled: " + result.cancelled);
-      }, 
-      function (error) {
-          alert("Scanning failed: " + error);
-      }
-   );
-    </script>
 </body>
 
 </html>
