@@ -2,7 +2,7 @@ var resultDiv;
 
 document.addEventListener("deviceready", init, false);
 function init() {
-    document.querySelector("#startScan").addEventListener("touchend", startScan, false);
+    document.querySelector("#scan").addEventListener("touchend", startScan, false);
     resultDiv = document.querySelector("#results");
 }
 
