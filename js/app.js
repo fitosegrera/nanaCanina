@@ -17,11 +17,11 @@ function startScan() {
                 "Cancelled: " + result.cancelled
 
             var req = new XMLHttpRequest()
-            req.open("GET", "http://fii.to:3000/mascotas?data=" + result.text, false)
-            req.send(null)
+            req.open("GET", "http://fii.to:3000/mascotas?data=" + result.text, true)
+            req.send()
             console.log(req.responseText)
             var r = req.responseText
-            resultDiv.innerHTML = r
+            resultDiv.innerHTML = JSON.stringify(r)
         },
         function(error) {
             alert("Scanning failed: " + error);
