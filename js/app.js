@@ -18,10 +18,11 @@ function startScan() {
 
             var req = new XMLHttpRequest()
             req.open("GET", "http://fii.to:3000/mascotas?data=" + result.text, true)
-            req.send()
-            console.log(req.responseText)
-            var r = req.responseText
-            resultDiv.innerHTML = JSON.stringify(r)
+            req.send(function() {
+                console.log(req.responseText)
+                var r = req.responseText
+                resultDiv.innerHTML = JSON.stringify(r)
+            })
         },
         function(error) {
             alert("Scanning failed: " + error);
