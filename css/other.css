@@ -1,0 +1,17 @@
+div #infoBack{
+	padding: 10px;
+	font-size: 18px;
+	color: #111;
+}
+
+div #servicios{
+	margin-top: 0px;
+	padding-top: 10px;
+	}
+
+.butt{
+	background-color: #3dffff;
+	color: #fff;
+	width: 50%;
+	height: 80px;
+}
